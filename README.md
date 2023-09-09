@@ -11,4 +11,17 @@ user: sb-rdzpr27326963@personal.example.com
             
 password: bcSs0Fr+
 
+Another informations 
+
+First Name: John
+
+Last Name: Doe
+
+Phone: 4086959880
+
+Address Line 1: 1 Main St
+
+State or Province: San Jose
+
+Zip: 95131
 
