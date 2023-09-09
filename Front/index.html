@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple PayPal Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <main>
+        <div class="product">
+            <h2>Product Name</h2>
+            <p>Item Number: 12345</p>
+            <p>Price: $19.99</p>
+        </div>
+        <div class="buyer-info">
+            <h2>Buyer Information</h2>
+            <form id="buyer-info-form">
+                <input type="text" placeholder="First Name" id="first-name" required>
+                <!-- Add new fields for buyer information -->
+                <input type="text" placeholder="Last Name" id="last-name" required>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="tel" placeholder="Phone Number" id="phone" required>
+
+                <!-- Shipping Address -->
+                <h2>Shipping Address</h2>
+                <input type="text" placeholder="Address Line 1" id="address-line-1" required>
+                <input type="text" placeholder="Address Line 2" id="address-line-2">
+                <input type="text" placeholder="State or Province" id="state" required>
+                <input type="text" placeholder="Zip or Postal Code" id="zip" required>
+                <input type="text" placeholder="Country" id="country" required value="US" readonly>
+                <!-- Add other buyer information fields here -->
+                <div id="paypal-buttons"></div>
+            </form>
+        </div>
+    </main>
+    <script src="https://www.paypal.com/sdk/js?client-id=AcwTZchup3mJRZVlu3GT0swiq-A78h0BbfGMjZJGKZT5w3zRSzrvrrlypxnh0aJjOjAolWe8rVqkTgLp"></script>
+    <script src="frontend.js"></script>
+</body>
+</html>
